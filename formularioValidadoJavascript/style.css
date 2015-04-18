@@ -1,0 +1,102 @@
+body{
+	background: white;
+	font-family: verdana;
+	background-image: url("image_background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0-pos 0-pos;
+}
+
+#fundo_pagina{
+	//background: black;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30px;
+
+}
+
+#subtitulo{
+	color: #000033;
+	width: 660px;
+	padding: 20px;
+	margin: 0px;
+	text-align: center; 
+	//background: #DCDCDC;
+	background: white;
+	border-radius: 10px;
+	//border: 1px solid;
+	font-weight: bold;
+}
+
+#formulario{
+	background: #87CEFA;
+	padding: 20px;
+	margin: 10px;
+	width: 700px;
+	border-radius: 10px;
+	border: 1px solid;
+	position: relative;
+}
+
+#divisao_form{
+	background: #87CEFA;
+	padding: 10px;
+	margin: 10px;
+	width: 660px;
+	border-radius: 10px;
+	border: 1px solid;
+	border-color: white;
+}
+
+.negrito{
+	font-weight: bold;
+}
+
+label
+{
+	position:relative;
+}
+
+input, select
+{
+	position:absolute;
+    left:170px;
+}
+
+#novidades{
+	left:22px;
+}
+
+#botao_enviar{
+	left: 500px;
+	position: relative;
+}
+
+#botao_limpar{
+	left: 10px;
+	position: relative;
+}
+
+.obrigatorio{
+	color: #B22222;
+	font-size: 12px;
+}
+
+#campos_obrigatorios{
+	font-size: 10px;
+}
+
+.senha{
+	font-size: 10px;
+	left: 400px;
+	width: 180px;
+	position: absolute;
+}
+
+.apenas_numeros
+{
+	font-size: 10px;
+	left: 400px;
+	width: 180px;
+	position: absolute;
+}

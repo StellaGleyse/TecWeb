@@ -1,0 +1,94 @@
+<!DOCTYPE html    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">   
+	<head> 
+		<title> Formulário para o site </title>   
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<!-- <script src="javascript.js"></script> -->
+
+		<script type="text/javascript" src="javascript.js"></script>
+
+	</head>  
+
+	<body>
+
+		<div id="fundo_pagina">
+		
+		<div id="formulario">
+			
+			<p id="subtitulo"> Cadastro </p>
+
+			<form id="cadastro" method="post" onsubmit="return valida(this);"> 
+
+				<div id="divisao_form"> <span class="negrito"> Dados Pessoais </span>  
+
+					<p> <label> Nome:<span class="obrigatorio">* </span>
+					<input type="text" name="nome" size="25" maxlength="25" tabindex="1" />
+					</label> 
+					</p>
+					
+					
+					<p>
+					<label> CPF: 
+					<input type="text" name="cpf" id="cpf" size="25" maxlength="14" onblur="valida_cpf(this.value)" onkeypress="formata_cpf(event)" tabindex="3" />
+					<span class="apenas_numeros">Apenas números. </span>
+					</label>
+					</p>
+
+					<p>
+					<label> Nascimento: <span class="obrigatorio">* </span>
+					<input type="text" name="nascimento" id="nascimento" size="10" maxlength="10" value="dd/mm/aaaa" onfocus="if (this.value=='dd/mm/aaaa'){this.value='';}" onblur="if (this.value==''){this.value='dd/mm/aaaa';}" onkeypress="formata_data(event)" onchange="valida_data(this.value)" tabindex="4" />
+					<span class="apenas_numeros">Apenas números. </span>
+					</label>
+					</p>
+					
+					<p>
+					<label> Sexo: 
+					<select name="sexo" width="25" tabindex="5">
+						<option value="selecione" selected="selected">Selecione</option>
+						<option value="feminino">Feminino</option>
+						<option value="masculino">Masculino</option>
+					</select>
+					</label>
+					</p>
+				</div>	
+				
+				<div id="divisao_form"> <span class="negrito"> Conta </span> 
+
+					<p>
+					<label> E-mail: <span class="obrigatorio">* </span>
+					<input type="text" name="email" size="25" maxlength="25" tabindex="10" />
+					</label>
+					</p>
+					
+					<p>
+					<label> Senha: <span class="obrigatorio">* </span>
+					<input type="password" name="senha" size="25" maxlength="10" tabindex="11" />
+					<span class="senha">Entre 6 e 10 caracteres. </span>
+					</label>
+					</p>
+					
+					<p>
+					<label> Confirmar senha: <span class="obrigatorio">* </span>
+					<input type="password" name="senha_confirmacao" size="25" maxlength="10" tabindex="12" />
+					<span class="senha">Entre 6 e 10 caracteres. </span>
+					</label>
+					</p>
+
+				</div>
+
+				<p> <input type="checkbox" name="news" value="news" checked="checked" id="novidades" tabindex="13" /> &nbsp; &nbsp;  Desejo receber e-mails com novidades. </p>
+
+				<p id="campos_obrigatorios"> <span class="obrigatorio">* </span> Campos obrigatórios </p>
+
+				<input id="botao_limpar" type="reset" value="Limpar Campos" tabindex="15" />
+			
+				<input id="botao_enviar" type="submit" value="Enviar" tabindex="14" /> 
+				
+			</form> 
+		</div>
+
+	</div>
+		
+	</body>
+	
+</html>
