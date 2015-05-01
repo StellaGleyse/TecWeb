@@ -1,0 +1,55 @@
+<!DOCTYPE html    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">   
+	<head> 
+		<title> Login </title>  
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		
+		Validação do formulário por javascript
+		<script type="text/javascript" src="javascript.js"></script>
+
+	</head>  
+
+	<body>
+
+		<div id="fundo_pagina">
+		
+		<div id="login_usuario">
+			
+			<p id="subtitulo_login"> Login </p>
+
+			<form id="login" name="login" method="post" action="login.php" onsubmit="return valida_login(this); return false;"> 
+
+				<div id="divisao_form_login"> 
+					<!--<span class="negrito"> Dados Pessoais </span>-->  
+					
+					<p>
+					<label> CPF: <span class="obrigatorio">* </span>
+					<input class="login" type="text" name="cpf" id="cpf" size="25" maxlength="14" onblur="valida_cpf(this.value)" onkeypress="formata_cpf(event)" tabindex="1" />
+					</label>
+					</p>
+					
+					<p>
+					<label> Senha: <span class="obrigatorio">* </span>
+					<input class="login" type="password" name="senha" size="25" maxlength="10" tabindex="2" />
+					</label>
+					</p>
+			
+					<input id="botao_login" type="submit" value="Entrar" name="entrar" tabindex="3" /> 
+
+					<br /><br />
+					<p class="cadastre"> Não é cadastrado? <a href="formulario.xhtml"> Cadastre-se </a> </p>
+
+				</div>				
+				
+			</form> 
+
+		</div>
+
+	</div>
+		
+	</body>
+	
+	
+</html>

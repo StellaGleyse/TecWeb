@@ -1,6 +1,7 @@
 body{
 	background: white;
 	font-family: verdana;
+	font-size: 12px;
 	background-image: url("image_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -10,9 +11,7 @@ body{
 #fundo_pagina{
 	//background: black;
 	margin-left: 20%;
-	margin-right: 20%;
-	margin-top: 30px;
-
+	margin-top: 80px;
 }
 
 #subtitulo{
@@ -21,10 +20,9 @@ body{
 	padding: 20px;
 	margin: 0px;
 	text-align: center; 
-	//background: #DCDCDC;
+	font-size: 14px;
 	background: white;
 	border-radius: 10px;
-	//border: 1px solid;
 	font-weight: bold;
 }
 
@@ -34,7 +32,7 @@ body{
 	margin: 10px;
 	width: 700px;
 	border-radius: 10px;
-	border: 1px solid;
+	//border: 1px solid;
 	position: relative;
 }
 
@@ -86,13 +84,6 @@ input, select
 	font-size: 10px;
 }
 
-.senha{
-	font-size: 10px;
-	left: 400px;
-	width: 180px;
-	position: absolute;
-}
-
 .apenas_numeros
 {
 	font-size: 10px;
@@ -100,3 +91,83 @@ input, select
 	width: 180px;
 	position: absolute;
 }
+
+
+input.login{
+	left:100px;
+}
+
+
+#login_usuario{
+	background: #87CEFA;
+	padding: 20px;
+	margin-left: 10%;
+	width: 500px;
+	border-radius: 10px;
+	//border: 1px solid;
+	position: relative;
+	text-align: left;
+}
+
+#subtitulo_login{
+	color: #000033;
+	width: 460px;
+	padding: 20px;
+	margin: 0px;
+	font-size: 14px;
+	text-align: center; 
+	background: white;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+#divisao_form_login{
+	background: #87CEFA;
+	padding: 10px;
+	margin: 10px;
+	width: 460px;
+	border-radius: 10px;
+	border: 1px solid;
+	border-color: white;
+}
+
+#botao_login{
+	left: 300px;
+	position: relative;
+	width: 180px;
+	left:100px;
+}
+
+
+.cadastre{
+	font-size: 11px;
+	color: #000033;
+}
+
+a:link, a:visited{
+	color: blue;	
+}
+
+a:hover{
+	color: blue;
+	font-weight: bold;
+}
+
+.exibe_imagem_galeria{
+	width: 40px;
+}
+
+#sou_cadastado{
+	font-size: 11px;
+	text-align: right;
+	font-family: verdana;
+	margin-right: 3px;
+}
+
+#logout{
+	font-size: 11px;
+	text-align: right;
+	font-family: verdana;
+	margin-right: 3px;
+}
+
